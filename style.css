@@ -1,8 +1,8 @@
 :root{
-    --palete1: #021526;
-    --palete2: #03346E;
-    --palete3: #6EACDA;
-    --palete4: #E2E2B6;
+    --primary-background-color: #021526;
+    --secundary-color: #03346E;
+    --third-color: #6EACDA;
+    --forth-color: #E2E2B6;
 }
 
 *{
@@ -10,7 +10,7 @@
     font-family: "Merriweather Sans";
 }
 body{
-    background-color: var(--palete1);
+    background-color: var(--primary-background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,9 +42,10 @@ a{
     width: auto;
 }
 .imagenPersonal{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border-radius: 100%;
+    background-color: var(--secundary-color);
 }
 .containerAllInfo{
     display: flex;
@@ -71,11 +72,10 @@ font-size: x-large;
 #containerSocial{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     padding: 20px;
     gap: 15px;
-    width: 650px;
+    width: 700px;
 }
 .linksPersonal{
     display: flex;
@@ -86,11 +86,11 @@ font-size: x-large;
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: var(--palete2);
+    background-color: var(--secundary-color);
     border: 1px solid darkgray;
     border-radius: 15px;
     padding: 10px 20px;
-    width: 110px;
+    width: auto;
 }
 .linksPersonal i{
     font-size: x-large;
@@ -101,9 +101,15 @@ font-size: x-large;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    gap: 15px;
-    width: 650px;
+    gap: 30px;
+    width: 700px;
     color: white;
+}
+.containerInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 2
+    15px;
 }
 .infoContacto{
     display: flex;
@@ -115,7 +121,8 @@ font-size: x-large;
     width: 110px;
     padding: 10px 20px;
     border-radius: 15px;
-    background-color: var(--palete2);
+    font-weight: 500;
+    background-color: var(--secundary-color);
     text-align: center;
     color: white;
     border: 1px solid darkgray;
@@ -139,17 +146,102 @@ font-size: x-large;
     flex-wrap: wrap;
     gap: 20px;
 }
-.contLenguaje{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
 .containerTecnologia{
     display: flex;
     gap: 20px;
     border-radius: 10px;
     padding: 5px;
     width: 120px;
-    background-color: var(--palete2);
+    background-color: var(--secundary-color);
     border: 1px solid darkgray;
+    font-size: 15px;
+    align-items: center;
+}
+
+/* projects */
+#containerAllProjects{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    gap: 20px;
+}
+.containerProjects{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: white;
+    align-items: center;
+    padding: 50px;
+    width: 700px;
+
+    background-color: var(--secundary-color);
+    border-radius: 15px;
+    border: solid 2px var(--third-color);
+}
+.containerProject{
+    width: 700px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.infoProyecto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+}
+.infoProyecto h3{
+    font-weight: 400;
+}
+.infoProyecto p{
+    font-weight: 100;
+    color: gainsboro;
+}
+
+.tecnologiasAplicadas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.contTecnologia{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 10px;
+    width: auto;
+    padding: 5px;
+    font-size: 10px;
+    background-color: var(--primary-background-color);
+    border: solid 1px var(--forth-color);
+    align-items: center;
+}
+
+.infoProyecto a{
+    width: 50px;
+    height: 30px;
+    font-size: 30px;
+    color: white;
+}
+
+.capturaImagenProject{
+    width: auto;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    padding: 20px;
 }
