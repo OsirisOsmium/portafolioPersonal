@@ -67,15 +67,25 @@ font-size: x-large;
     font-size: large;
     font-weight: 500;
 }
-/* social */
 
-#containerSocial{
+
+/* containerAllInfo */
+#containerAllInfo{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
-    gap: 15px;
+    flex-wrap: wrap;
     width: 700px;
+}
+
+/* social */
+
+#containerSocial, #containerAboutMe, #aboutMe, #experience, #tecnologias, #containerAllProjects, #estudios{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 10px;
+    color: white;
 }
 .linksPersonal{
     display: flex;
@@ -97,20 +107,6 @@ font-size: x-large;
 }
 
 /* about me */
-#containerAboutMe{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 30px;
-    width: 700px;
-    color: white;
-}
-.containerInfo{
-    display: flex;
-    flex-direction: column;
-    gap: 2
-    15px;
-}
 .infoContacto{
     display: flex;
     flex-direction: row;
@@ -126,9 +122,6 @@ font-size: x-large;
     text-align: center;
     color: white;
     border: 1px solid darkgray;
-}
-.aboutMePresentation{
-
 }
 
 /* tecnologias */
@@ -159,12 +152,6 @@ font-size: x-large;
 }
 
 /* projects */
-#containerAllProjects{
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-    gap: 20px;
-}
 .containerProjects{
     display: flex;
     flex-direction: column;
@@ -229,10 +216,49 @@ font-size: x-large;
     height: 200px;
 }
 
+/* estudios */
+.containerEstudios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.containerEstudio{
+    display: flex;
+    justify-content: space-between;
+}
+.containerInfoStudyes{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 500px;
+}
+.conteinerInfoStudy{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.titulacion{
+    font-weight: 800;
+    font-size: 18px;
+}
+.escuela{
+    font-weight: 500;
+    font-size: 16px;
+}
+.aptitudesAprendidas{
+    font-weight: 100;
+    font-size: 14px;
+    color: gainsboro;
+}
 
-
-
-
+.containerTiempoVerify{
+    height: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--secundary-color);
+}
 
 
 
