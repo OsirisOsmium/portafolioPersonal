@@ -74,18 +74,18 @@ font-size: x-large;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 700px;
+    max-width: 790px;
 }
 
 /* social */
-
-#containerSocial, #containerAboutMe, #aboutMe, #experience, #tecnologias, #containerAllProjects, #estudios{
+#containerSocial, #aboutMe, #experience, #tecnologias, #containerAllProjects, #estudios{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     padding: 25px;
     gap: 10px;
     color: white;
+    width: auto;
 }
 .linksPersonal{
     display: flex;
@@ -159,23 +159,23 @@ font-size: x-large;
     gap: 20px;
     color: white;
     align-items: center;
-    padding: 50px;
-    width: 700px;
+    padding: 20px;
+    max-width: 700px;
 
     background-color: var(--secundary-color);
     border-radius: 15px;
     border: solid 2px var(--third-color);
 }
 .containerProject{
-    width: 700px;
     display:flex;
     flex-wrap: wrap;
+    width: auto;
 }
 .infoProyecto{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 400px;
+    max-width: 400px;
 }
 .infoProyecto h3{
     font-weight: 400;
@@ -231,7 +231,7 @@ font-size: x-large;
     display: flex;
     flex-direction: row;
     gap: 20px;
-    width: 500px;
+    max-width: 700px;
 }
 .conteinerInfoStudy{
     display: flex;
@@ -253,13 +253,21 @@ font-size: x-large;
 }
 
 .containerTiempoVerify{
-    height: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tiempoEstudio{
+    background-color: var(--secundary-color);
+    width: 100px;
+    text-align: center;
     padding: 10px 20px;
     border-radius: 15px;
-    text-align: center;
-    background-color: var(--secundary-color);
 }
-
+.containerTiempoVerify i{
+    font-size: 30px;
+}
 
 
 /* footer */
